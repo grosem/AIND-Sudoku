@@ -7,7 +7,7 @@ A: Constraint propagation is a process of inference. It uses constraints to remo
 
 1. Each box has a unique set of 20 peers with the constraint that the box's digit is unique among its peers.
 2. If the box has two possible solutions (this also works for n>2 solutions) and has n-1 peers with the same solutions, it is certain that these numbers are distributed between these boxes.
-3. Knowing that, these digits are not available for all other peers and can get removed safely.
+3. Knowing that, these digits are not available for all other peers of the same unit and can get removed safely.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
