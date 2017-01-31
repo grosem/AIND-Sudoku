@@ -3,7 +3,7 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Constraint propagation is a process of inference. It uses constraints to remove values from the domain. Every box of a sudoku can hold one of nine digits which have to adhere to the sudoku rules. *Naked Twins* is a strategy to remove digits from the possible solutions:
+A: Constraint propagation is a process of inference. It satisfies constraints by removing values from the domain. Every box of a sudoku can hold one of nine digits which have to adhere to the sudoku rules. Once digits get removed, there might be other constraints leading to even more removals and so on. *Naked Twins* is a strategy to remove digits from the possible solutions. Its from the sudoku rules derived constraints work like this:
 
 1. Each box has a unique set of 20 peers with the constraint that the box's digit is unique among its peers.
 2. If the box has two possible solutions (this also works for n>2 solutions) and has n-1 peers with the same solutions, it is certain that these numbers are distributed between these boxes.
